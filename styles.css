@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.datetime {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 60px;
+  color: red;
+  margin: 0 20px;
+}
+
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:first-of-type {
+  background-color: #ef4444;
+}
+
+button:first-of-type:hover {
+  background-color: #dc2626;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.firework {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: relative;
+  animation: firework 2s infinite;
+}
+
+@keyframes firework {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(20);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(40);
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.new-year-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff0000;
+  animation: fadeInOut 3s ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
