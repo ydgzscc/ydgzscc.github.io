@@ -26,7 +26,7 @@ function createNewYearEffect() {
   // 强制重绘
   void text.offsetWidth
 
-  text.style.animation = "fadeInOut 3s ease-in-out"
+  text.style.animation = "fadeInOut 4s ease-in-out"
 
   text.addEventListener("animationend", () => {
     text.remove()
@@ -43,5 +43,5 @@ scaleTitle()
 document.addEventListener("DOMContentLoaded", createNewYearEffect)
 
 // 之后每10秒显示一次
-setInterval(createNewYearEffect, 10000)
+setInterval(createNewYearEffect, 5000)
 
