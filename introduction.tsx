@@ -7,7 +7,7 @@ export default function Introduction() {
       <h1 className="text-6xl font-bold mb-8">简介</h1>
       <p className="text-2xl">陈飞鸣·2013.4.2 白羊座 12岁</p>
       <Link href="/" passHref>
-        <Button className="bg-blue-500 hover:bg-blue-600 text-white text-xl px-8 py-6 mt-8">トップページに戻る</Button>
+        <Button className="bg-blue-500 hover:bg-blue-600 text-white text-xl px-8 py-6 mt-8">返回~</Button>
       </Link>
     </div>
   )
