@@ -54,7 +54,7 @@ export default function Page() {
               transition: "transform 0.5s ease-in-out",
             }}
           >
-            新年好
+            新年好~
           </h1>
           <Firework className="ml-4" />
         </div>
